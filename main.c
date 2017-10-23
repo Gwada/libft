@@ -23,7 +23,8 @@ int		main(int argc, char **argv)
 	try_ft_atoi("\n\n\t\t     -1654egfer265");
 	ft_putnbr(ft_isalpha('H'));
 	ft_putnbr(ft_isdigit('d'));
-	ft_putnbr(ft_isalnum('w'));*/
+	ft_putnbr(ft_isalnum('w'));
+	ft_putnbr(ft_isascii(-5));*/
 	/*ft_putchar('a');
 	ft_putstr("test");
 	ft_putendl("test");
