@@ -1,13 +1,19 @@
 #include "libft.h"
 
-char	*strncpy(char *dest, const char *src, size_t n)
+char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
 	size_t	i;
 
-	i = -1;
-	while (++i < n && src[i])
+	i = 0;
+	while (i < n && src[i])
+	{
 		dest[i] = src[i];
+		i++;
+	}
 	while (i < n)
-		dest[i++] = '\0';
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
