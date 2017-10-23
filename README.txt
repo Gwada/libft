@@ -20,7 +20,7 @@ ft_memcmp	:
 ft_strlen	:
 ft_strdup	:
 ft_strcpy	:
-ft_strncpy	:
+char  *ft_strncpy(char *dest, const char *src, size_t n)	: ok
 ft_strcat	:
 ft_strncat	:
 ft_strlcat	:

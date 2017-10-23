@@ -24,6 +24,7 @@ typedef	struct		S_LIST
 */
 
 /* Part1 */
+char	*ft_strncpy(char *, const char *, size_t);
 
 /* Part2 */
 void	*ft_memalloc(size_t);
