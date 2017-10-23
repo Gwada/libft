@@ -3,7 +3,7 @@
 int		ft_countnumber(int n)
 {
 	int				number;
-	unsigned	int	ui;
+	unsigned int	ui;
 
 	number = 1;
 	if (n < 0)
@@ -26,7 +26,7 @@ char	*ft_itoa(int n)
 	int				i;
 	int				number;
 	char			*sn;
-	unsigned	int	ui;
+	unsigned int	ui;
 
 	number = ft_countnumber(n);
 	if (!(sn = (char*)malloc(sizeof(char) * (number + 1))))
