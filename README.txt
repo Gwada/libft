@@ -36,8 +36,8 @@ int		ft_isdigit(int c);                                      : ok
 int		ft_isalnum(int c);                                      : ok
 int		ft_isascii(int c);                                      : ok
 int		ft_isprint(int c);                                      : ok
-int		ft_toupper(int c);                                      :
-int		ft_tolower(int c);                                      :
+int		ft_toupper(int c);                                      : ok
+int		ft_tolower(int c);                                      : ok
 
 
 Part 2
