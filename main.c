@@ -8,11 +8,11 @@ int		main(int argc, char **argv)
 {
 	(void)argc;
 	(void)argv;
-	//ft_putchar('a');
-	//ft_putstr("test");
-	//ft_putendl("test");
-	//ft_putnbr(-2147483648);
-	//try_ft_putchar_fd('a');
+	/*ft_putchar('a');
+	ft_putstr("test");
+	ft_putendl("test");
+	ft_putnbr(-2147483648);
+	try_ft_putchar_fd('a');*/
 	return (0);
 }
 
