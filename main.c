@@ -5,6 +5,7 @@
 void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
 void	try_ft_putendl_fd(char *);
+void	try_ft_putnbr_fd(int);
 
 int		main(int argc, char **argv)
 {
@@ -15,9 +16,19 @@ int		main(int argc, char **argv)
 	ft_putendl("test");
 	ft_putnbr(-2147483648);
 	try_ft_putchar_fd('a');
-	try_ft_putstr_fd("test");*/
-	try_ft_putendl_fd("test");
+	try_ft_putstr_fd("test");
+	try_ft_putendl_fd("test");*/
+	try_ft_putnbr_fd(-2147483648);
 return (0);
+}
+
+void	try_ft_putnbr_fd(int n)
+{
+	int fd;
+
+	fd = creat("test ft_putnbr_fd.txt", S_IRWXU);
+	ft_putnbr_fd(n, fd);
+	close (fd);
 }
 
 void	try_ft_putchar_fd(char c)
