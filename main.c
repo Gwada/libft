@@ -14,8 +14,9 @@ int		main(int argc, char **argv)
 {
 	(void)argc;
 	(void)argv;
-	//ft_putnbr(ft_strlen("123456"));	test ft_strlen
+	/*ft_putnbr(ft_strlen("123456"));	test ft_strlen
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
+	ft_putnbr(ft_strcmp("test","test"));*/
 	/*ft_putchar('a');
 	ft_putstr("test");
 	ft_putendl("test");
