@@ -29,6 +29,7 @@ typedef	struct		S_LIST
 void	ft_putchar(char);
 void	ft_putstr(char const *);
 void	ft_putendl(char const *);
+void	ft_putnbr(int);
 
 /* Bonus */
 
