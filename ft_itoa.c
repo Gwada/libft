@@ -30,7 +30,7 @@ char	*ft_itoa(int n)
 
 	number = ft_countnumber(n);
 	if (!(sn = (char*)malloc(sizeof(char) * (number + 1))))
-		return (0);
+		return (NULL);
 	sn[number] = '\0';
 	i = number;
 	if (n < 0)
