@@ -23,8 +23,12 @@ typedef	struct		S_LIST
 /*
 **	PROTOTYPES
 */
+/* Part1 */
 
+/* Part2 */
 void	ft_putchar(char);
+
+/* Bonus */
 
 
 #endif
