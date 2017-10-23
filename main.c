@@ -11,6 +11,9 @@ void	try_ft_putendl_fd(char *);
 void	try_ft_putnbr_fd(int);
 void	try_ft_atoi(char *);
 void	try_ft_isalpha(int);
+void	try_ft_isdigit(int);
+
+
 
 int		main(int argc, char **argv)
 {
@@ -20,7 +23,8 @@ int		main(int argc, char **argv)
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
 	ft_putnbr(ft_strcmp("test","test"));
 	try_ft_atoi("\n\n\t\t     -1654egfer265");
-	try_ft_isalpha('H');*/
+	try_ft_isalpha('H');
+	try_ft_isdigit('d');*/
 	/*ft_putchar('a');
 	ft_putstr("test");
 	ft_putendl("test");
@@ -32,6 +36,14 @@ int		main(int argc, char **argv)
 	ft_putstr(ft_itoa(-2147483648));*/
 	return (0);
 }
+
+
+
+void	try_ft_isdigit(int c)
+{
+	ft_putnbr(ft_isdigit(c));
+}
+
 void	try_ft_isalpha(int c)
 {
 	ft_putnbr(ft_isalpha(c));
