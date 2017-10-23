@@ -4,11 +4,14 @@
 /*
 **	BIBLIOTHEQUES
 */
+
 #include <unistd.h>
+
 
 /*
 **	STRUCTURES
 */
+
 typedef	struct		S_LIST
 {
 	void			*content;
@@ -16,9 +19,12 @@ typedef	struct		S_LIST
 	struct	s_list	*next;
 }					T_LIST;
 
+
 /*
 **	PROTOTYPES
 */
+
 void	ft_putchar(char);
+
 
 #endif
