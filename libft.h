@@ -50,8 +50,8 @@ void	ft_putchar_fd(char, int);
 void	ft_putstr_fd(char const *, int);
 void	ft_putendl_fd(char const *, int);
 void	ft_putnbr_fd(int , int);
-/* Bonus */
 
+/* Bonus */
 t_list	*ft_lstnew(void const *, size_t);
 void	ft_lstdelone(t_list **, void (*del)(void *, size_t));
 void	ft_lstdel(t_list **, void (*del)(void *, size_t));
