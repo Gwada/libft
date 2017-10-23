@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include "libft.h"
 void	try_ft_putchar_fd(char);
+void	try_ft_putstr_fd(char *);
 
 int		main(int argc, char **argv)
 {
@@ -13,12 +14,19 @@ int		main(int argc, char **argv)
 	ft_putendl("test");
 	ft_putnbr(-2147483648);
 	try_ft_putchar_fd('a');*/
-	return (0);
+	try_ft_putstr_fd("test");
+return (0);
 }
 
 void	try_ft_putchar_fd(char c)
 {
-	int fd = creat("ft_putchar_fd.txt", S_IRWXU);
+	int fd = creat("test ft_putchar_fd.txt", S_IRWXU);
 	ft_putchar_fd(c, fd);
+	close (fd);
+}
+void	try_ft_putstr_fd(char *s)
+{
+	int fd = creat("test ft_putstr_fd.txt", S_IRWXU);
+	ft_putstr_fd(s, fd);
 	close (fd);
 }
