@@ -29,7 +29,7 @@ ft_strstr	:
 ft_strnstr	:
 ft_strcmp	:
 ft_strncmp	:
-ft_atoi	:
+ft_atoi		:
 ft_isalpha	:
 ft_isdigit	:
 ft_isalnum	:
