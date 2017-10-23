@@ -17,7 +17,8 @@ int		main(int argc, char **argv)
 {
 	(void)argc;
 	(void)argv;
-	/*ft_putnbr(ft_strlen("123456"));	test ft_strlen
+	/*ft_putnbr(ft_strlen("123456"));
+	ft_putstr(ft_strcpy(DEST, SRC));
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
 	ft_putnbr(ft_strcmp("test","test"));
 	try_ft_atoi("\n\n\t\t     -1654egfer265");

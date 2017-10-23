@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n);                     :
 int		ft_memcmp(cons void *s1, const void *s2, size_t n);     :
 size_t	ft_strlen(const char *s);                                       : ok
 char	*ft_strdup(const char *s);                                      :
-char	*ft_strcpy(char *dest, const char *src);                        :
+char	*ft_strcpy(char *dest, const char *src);                        : ok
 char  *ft_strncpy(char *dest, const char *src, size_t n)	        : ok
 char	*ft_strcat(char *dest, const char *src);                        :
 char	*ft_strncat(char *dest, const char *srx, size_t n);             : ok (test main abs)
