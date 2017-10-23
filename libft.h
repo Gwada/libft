@@ -27,6 +27,7 @@ typedef	struct		S_LIST
 
 /* Part2 */
 void	ft_putchar(char);
+void	ft_putstr(char const *);
 
 /* Bonus */
 
