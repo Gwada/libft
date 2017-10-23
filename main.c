@@ -9,6 +9,7 @@ void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
 void	try_ft_putendl_fd(char *);
 void	try_ft_putnbr_fd(int);
+void	try_ft_atoi(void);
 
 int		main(int argc, char **argv)
 {
@@ -16,7 +17,8 @@ int		main(int argc, char **argv)
 	(void)argv;
 	/*ft_putnbr(ft_strlen("123456"));	test ft_strlen
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
-	ft_putnbr(ft_strcmp("test","test"));*/
+	ft_putnbr(ft_strcmp("test","test"));
+	try_ft_atoi();*/
 	/*ft_putchar('a');
 	ft_putstr("test");
 	ft_putendl("test");
@@ -27,6 +29,16 @@ int		main(int argc, char **argv)
 	try_ft_putnbr_fd(-2147483648);
 	ft_putstr(ft_itoa(-2147483648));*/
 	return (0);
+}
+
+void	try_ft_atoi(void)
+{
+	char	*nptr = "\n\n\n\t\t\t\t     -1654sd445";
+
+	ft_putstr("ft_atoi : ");
+	ft_putnbr(ft_atoi(nptr));
+	ft_putstr("\natoi : ");
+	ft_putnbr(atoi(nptr));
 }
 
 void	try_ft_putnbr_fd(int n)
