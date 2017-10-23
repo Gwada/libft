@@ -4,6 +4,7 @@
 #include "libft.h"
 void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
+void	try_ft_putendl_fd(char *);
 
 int		main(int argc, char **argv)
 {
@@ -13,20 +14,37 @@ int		main(int argc, char **argv)
 	ft_putstr("test");
 	ft_putendl("test");
 	ft_putnbr(-2147483648);
-	try_ft_putchar_fd('a');*/
-	try_ft_putstr_fd("test");
+	try_ft_putchar_fd('a');
+	try_ft_putstr_fd("test");*/
+	try_ft_putendl_fd("test");
 return (0);
 }
 
 void	try_ft_putchar_fd(char c)
 {
-	int fd = creat("test ft_putchar_fd.txt", S_IRWXU);
+	int fd;
+	
+	fd = creat("test ft_putchar_fd.txt", S_IRWXU);
 	ft_putchar_fd(c, fd);
 	close (fd);
 }
+
 void	try_ft_putstr_fd(char *s)
 {
-	int fd = creat("test ft_putstr_fd.txt", S_IRWXU);
+	int fd;
+	
+	fd = creat("test ft_putstr_fd.txt", S_IRWXU);
 	ft_putstr_fd(s, fd);
 	close (fd);
 }
+
+void	try_ft_putendl_fd(char *s)
+{
+	int fd;
+	
+	fd = creat("test ft_putnbr_fd.txt", S_IRWXU);
+	ft_putendl_fd(s, fd);
+	close(fd);
+}
+
+
