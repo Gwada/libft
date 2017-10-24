@@ -5,6 +5,7 @@
 int		FD = 0;
 char	DEST[15];
 char	*SRC = "ceci est un test";
+char	*SRC2 = "ceci est un autre test";
 void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
 void	try_ft_putendl_fd(char *);
@@ -21,7 +22,8 @@ int		main(int argc, char **argv)
 	ft_putstr(ft_strcpy(DEST, SRC));
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
 	ft_putnbr(ft_strcmp("test","test"));
-	try_ft_atoi("\n\n\t\t     -1654egfer265");
+	ft_putnbr(ft_strncmp(SRC, SRC2, 12));*/
+	/*try_ft_atoi("\n\n\t\t     -1654egfer265");
 	ft_putnbr(ft_isalpha('H'));
 	ft_putnbr(ft_isdigit('d'));
 	ft_putnbr(ft_isalnum('w'));
