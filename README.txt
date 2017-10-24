@@ -23,7 +23,7 @@ char	*ft_strcpy(char *dest, const char *src);                        : ok
 char  *ft_strncpy(char *dest, const char *src, size_t n)	        : ok
 char	*ft_strcat(char *dest, const char *src);                        : ok
 char	*ft_strncat(char *dest, const char *src, size_t n);             : ok
-size_t	ft_strlcat(char *dest, const char *src, size_t dstsize);           : ok
+size_t	ft_strlcat(char *dest, const char *src, size_t dstsize);        : ok
 char	*ft_strchr(const char *s, int c);                               :
 char	*ft_strrchr(const char *s, int c);                              :
 char	*ft_strstr(const char *haystack, const char *needle);           :
