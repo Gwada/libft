@@ -1,11 +1,12 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <string.h>
 #include "libft.h"
 int		FD = 0;
 char	DEST[15];
-char	*SRC = "ceci est un test";
-char	*SRC2 = "ceci est un autre test";
+char	SRC[] = "ceci est un test";
+char	SRC2[] = "ceci est un autre test";
 char	**STR;
 void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
@@ -20,7 +21,8 @@ int		main(int argc, char **argv)
 {
 	(void)argc;
 	(void)argv;
-	/*ft_putnbr(ft_strlen("123456"));
+	/*ft_putstr(ft_memset(SRC, '0', 10));
+	ft_putnbr(ft_strlen("123456"));
 	ft_putstr(ft_strcpy(DEST, SRC));
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
 	ft_putnbr(ft_strcmp("test","test"));
