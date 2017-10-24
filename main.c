@@ -14,7 +14,7 @@ void	try_ft_putendl_fd(char *);
 void	try_ft_putnbr_fd(int);
 void	try_ft_strplit(char *, char);
 void	try_ft_atoi(char *);
-
+void	try_ft_bzero(size_t);
 
 
 int		main(int argc, char **argv)
@@ -22,7 +22,8 @@ int		main(int argc, char **argv)
 	(void)argc;
 	(void)argv;
 	/*ft_putstr(ft_memset(SRC, '0', 10));
-	ft_putnbr(ft_strlen("123456"));
+	try_ft_bzero(5);*/
+	/*ft_putnbr(ft_strlen("123456"));
 	ft_putstr(ft_strcpy(DEST, SRC));
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
 	ft_putnbr(ft_strcmp("test","test"));
@@ -48,6 +49,13 @@ int		main(int argc, char **argv)
 	return (0);
 }
 
+void	try_ft_bzero(size_t n)
+{
+	bzero(SRC, n);
+	ft_bzero(SRC2, n);
+	ft_putendl(SRC);
+	ft_putendl(SRC2);
+}
 
 void	try_ft_strplit(char *s, char c)
 {
