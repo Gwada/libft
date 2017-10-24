@@ -22,7 +22,8 @@ int		main(int argc, char **argv)
 	(void)argc;
 	(void)argv;
 	/*ft_putstr(ft_memset(SRC, '0', 10));
-	try_ft_bzero(5);*/
+	try_ft_bzero(5);
+	ft_putstr(ft_memcpy(DEST, SRC, 3));*/
 	/*ft_putnbr(ft_strlen("123456"));
 	ft_putstr(ft_strcpy(DEST, SRC));
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
