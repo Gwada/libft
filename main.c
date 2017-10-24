@@ -21,40 +21,40 @@ int		main(int argc, char **argv)
 {
 	(void)argc;
 	(void)argv;
-	/*ft_putstr(ft_memset(SRC, '0', 10));
-	try_ft_bzero(5);
-	ft_putstr(ft_memcpy(DEST, SRC, 3));
-	ft_putstr(ft_memccpy(SRC2, SRC, 'i', 12));
-	ft_putstr(ft_memmove(SRC + 5, SRC2, 4));
-	ft_putstr(ft_memchr(SRC, ' ', 16));
-	ft_putnbr(ft_memcmp(SRC2, SRC + 1, 13));
-	ft_putstr(ft_strdup(SRC));
-	ft_putstr(ft_strcat(SRC, SRC2));
-	ft_putstr(ft_strncat(SRC, SRC2, 15));
-	ft_putnbr(ft_strlcat(SRC2, SRC, 100));*/
-	/*ft_putnbr(ft_strlen("123456"));
-	ft_putstr(ft_strcpy(DEST, SRC));
-	ft_putstr(ft_strncpy(DEST, SRC, 10));
-	ft_putnbr(ft_strcmp("test","test"));
-	ft_putnbr(ft_strncmp(SRC, SRC2, 12));*/
-	/*try_ft_atoi("\n\n\t\t     -1654egfer265");
-	ft_putnbr(ft_isalpha('H'));
-	ft_putnbr(ft_isdigit('d'));
-	ft_putnbr(ft_isalnum('w'));
-	ft_putnbr(ft_isascii(-5));
-	ft_putnbr(ft_isprint(' '));
-	ft_putchar(ft_toupper('S'));
-	ft_putchar(ft_tolower('s'));*/
-	/*ft_putchar('a');
-	ft_putstr("test");
-	ft_putendl("test");
-	ft_putnbr(-2147483648);
-	try_ft_putchar_fd('a');
-	try_ft_putstr_fd("test");
-	try_ft_putendl_fd("test");
-	try_ft_putnbr_fd(-2147483648);
-	try_ft_strplit(SRC2, ' ');*/
-	/*ft_putstr(ft_itoa(-2147483648));*/
+//	ft_putstr(ft_memset(SRC, '0', 10));
+//	try_ft_bzero(5);
+//	ft_putstr(ft_memcpy(DEST, SRC, 3));
+//	ft_putstr(ft_memccpy(SRC2, SRC, 'i', 12));
+//	ft_putstr(ft_memmove(SRC + 5, SRC2, 4));
+//	ft_putstr(ft_memchr(SRC, ' ', 16));
+//	ft_putnbr(ft_memcmp(SRC2, SRC + 1, 13));
+//	ft_putnbr(ft_strlen("123456"));
+//	ft_putstr(ft_strdup(SRC));
+//	ft_putstr(ft_strcpy(DEST, SRC));
+//	ft_putstr(ft_strncpy(DEST, SRC, 10));
+//	ft_putstr(ft_strcat(SRC, SRC2));
+//	ft_putstr(ft_strncat(SRC, SRC2, 15));
+//	ft_putnbr(ft_strlcat(SRC2, SRC, 100));
+//	ft_putnbr(ft_strcmp("test","test"));
+//	ft_putnbr(ft_strncmp(SRC, SRC2, 12));
+//	try_ft_atoi("\n\n\t\t     -1654egfer265");
+//	ft_putnbr(ft_isalpha('H'));
+//	ft_putnbr(ft_isdigit('d'));
+//	ft_putnbr(ft_isalnum('w'));
+//	ft_putnbr(ft_isascii(-5));
+//	ft_putnbr(ft_isprint(' '));
+//	ft_putchar(ft_toupper('S'));
+//	ft_putchar(ft_tolower('s'));
+//	try_ft_strplit(SRC2, ' ');
+//	ft_putstr(ft_itoa(-2147483648));
+//	ft_putchar('a');
+//	ft_putstr("test");
+//	ft_putendl("test");
+//	ft_putnbr(-2147483648);
+//	try_ft_putchar_fd('a');
+//	try_ft_putstr_fd("test");
+//	try_ft_putendl_fd("test");
+//	try_ft_putnbr_fd(-2147483648);
 	return (0);
 }
 
