@@ -38,8 +38,8 @@ int		main(int argc, char **argv)
 	try_ft_putchar_fd('a');
 	try_ft_putstr_fd("test");
 	try_ft_putendl_fd("test");
-	try_ft_putnbr_fd(-2147483648);
-	ft_putstr(ft_itoa(-2147483648));*/
+	try_ft_putnbr_fd(-2147483648);*/
+	ft_putstr(ft_itoa(-2147483648));
 	return (0);
 }
 

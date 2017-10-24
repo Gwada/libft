@@ -7,12 +7,8 @@ int		ft_countnumber(int n)
 
 	number = 1;
 	if (n < 0)
-	{
 		number++;
-		ui = n * -1;
-	}
-	else
-		ui = n;
+	ui = (n < 0) ? -n : n;
 	while (ui > 9)
 	{
 		number++;
@@ -33,10 +29,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	sn[number] = '\0';
 	i = number;
-	if (n < 0)
-		ui = n * -1;
-	else
-		ui = n;
+	ui = (n < 0) ? -n : n;
 	while (--i >= 0)
 	{
 		if (!i && n < 0)
