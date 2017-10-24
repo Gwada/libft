@@ -6,10 +6,12 @@ int		FD = 0;
 char	DEST[15];
 char	*SRC = "ceci est un test";
 char	*SRC2 = "ceci est un autre test";
+char	**STR;
 void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
 void	try_ft_putendl_fd(char *);
 void	try_ft_putnbr_fd(int);
+void	try_ft_strplit(char *, char);
 void	try_ft_atoi(char *);
 
 
@@ -38,12 +40,19 @@ int		main(int argc, char **argv)
 	try_ft_putchar_fd('a');
 	try_ft_putstr_fd("test");
 	try_ft_putendl_fd("test");
-	try_ft_putnbr_fd(-2147483648);*/
-	ft_putstr(ft_itoa(-2147483648));
+	try_ft_putnbr_fd(-2147483648);
+	try_ft_strplit(SRC2, ' ');*/
+	/*ft_putstr(ft_itoa(-2147483648));*/
 	return (0);
 }
 
 
+void	try_ft_strplit(char *s, char c)
+{
+	STR = ft_strsplit(s, c);
+	while (*STR)
+		ft_putendl(*(STR++));
+}
 
 void	try_ft_atoi(char *nptr)
 {
