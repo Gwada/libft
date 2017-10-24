@@ -5,8 +5,8 @@
 #include "libft.h"
 int		FD = 0;
 char	DEST[15];
-char	SRC[] = "ceci est un test";
-char	SRC2[] = "ceci est un autre test";
+char	SRC[100] = "ceci est un test";
+char	SRC2[100] = "ceci est un autre test";
 char	**STR;
 void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
@@ -29,6 +29,7 @@ int		main(int argc, char **argv)
 	ft_putstr(ft_memchr(SRC, ' ', 16));
 	ft_putnbr(ft_memcmp(SRC2, SRC + 1, 13));
 	ft_putstr(ft_strdup(SRC));*/
+	ft_putstr(ft_strcat(SRC, SRC2));
 	/*ft_putnbr(ft_strlen("123456"));
 	ft_putstr(ft_strcpy(DEST, SRC));
 	ft_putstr(ft_strncpy(DEST, SRC, 10));
