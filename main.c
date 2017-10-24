@@ -27,7 +27,8 @@ int		main(int argc, char **argv)
 	ft_putstr(ft_memccpy(SRC2, SRC, 'i', 12));
 	ft_putstr(ft_memmove(SRC + 5, SRC2, 4));
 	ft_putstr(ft_memchr(SRC, ' ', 16));
-	ft_putnbr(ft_memcmp(SRC2, SRC + 1, 13));*/
+	ft_putnbr(ft_memcmp(SRC2, SRC + 1, 13));
+	ft_putstr(ft_strdup(SRC));*/
 	/*ft_putnbr(ft_strlen("123456"));
 	ft_putstr(ft_strcpy(DEST, SRC));
 	ft_putstr(ft_strncpy(DEST, SRC, 10));

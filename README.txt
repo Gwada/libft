@@ -18,7 +18,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n);             : ok
 void	*ft_memchr(const void *s, int c, size_t n);                     : ok
 int		ft_memcmp(cons void *s1, const void *s2, size_t n);     : ok
 size_t	ft_strlen(const char *s);                                       : ok
-char	*ft_strdup(const char *s);                                      :
+char	*ft_strdup(const char *s);                                      : ok
 char	*ft_strcpy(char *dest, const char *src);                        : ok
 char  *ft_strncpy(char *dest, const char *src, size_t n)	        : ok
 char	*ft_strcat(char *dest, const char *src);                        :
