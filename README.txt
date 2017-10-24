@@ -14,7 +14,7 @@ void	*ft_memset(void *s, int c, size_t n);                           : ok
 void	ft_bzero(void *s, size_t n);                                    : ok
 void	*ft_memcpy(void *dest, const void *src, size_t n);              : ok
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);      : ok
-void	*ft_memmove(void *dest, const void *src, size_t n);             :
+void	*ft_memmove(void *dest, const void *src, size_t n);             : ok
 void	*ft_memchr(const void *s, int c, size_t n);                     :
 int		ft_memcmp(cons void *s1, const void *s2, size_t n);     :
 size_t	ft_strlen(const char *s);                                       : ok
