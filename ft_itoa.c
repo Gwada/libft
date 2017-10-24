@@ -19,7 +19,6 @@ int		ft_countnumber(int n)
 
 char	*ft_itoa(int n)
 {
-	int				i;
 	int				number;
 	char			*sn;
 	unsigned int	ui;
@@ -28,14 +27,13 @@ char	*ft_itoa(int n)
 	if (!(sn = (char*)malloc(sizeof(char) * (number + 1))))
 		return (NULL);
 	sn[number] = '\0';
-	i = number;
 	ui = (n < 0) ? -n : n;
-	while (--i >= 0)
+	while (--number >= 0)
 	{
-		if (!i && n < 0)
-			sn[i] = '-';
+		if (!number && n < 0)
+			sn[number] = '-';
 		else
-			sn[i] = ui % 10 + '0';
+			sn[number] = ui % 10 + '0';
 		ui /= 10;
 	}
 	return (sn);
