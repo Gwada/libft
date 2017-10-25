@@ -27,7 +27,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize);        : ok
 char	*ft_strchr(const char *s, int c);                               : ok
 char	*ft_strrchr(const char *s, int c);                              : ok
 char	*ft_strstr(const char *haystack, const char *needle);           : ok
-char	*ft_strnstr(const char *s1, const char *s2, size_t len);        :
+char	*ft_strnstr(const char *s1, const char *s2, size_t len);        : ok
 int		ft_strcmp(const char *s1, const char *s2);              : ok
 int		ft_strncmp(const char *s1, const char *s2, size_t n);   : ok
 int		ft_atoi(const char *nptr);                              : ok

@@ -37,7 +37,8 @@ int		main(int argc, char **argv)
 //	ft_putnbr(ft_strlcat(SRC, SRC2, 30));
 //	ft_putstr(ft_strchr(SRC, '0'));
 //	ft_putstr(ft_strrchr(SRC, 'z'));
-	ft_putstr(ft_strstr("le papa de sophie mange", ""));
+//	ft_putstr(ft_strstr("le papa de sophie mange", "papa de su"));
+//	ft_putstr(ft_strnstr("phrase test", "", 6));
 //	ft_putnbr(ft_strcmp("test","test"));
 //	ft_putnbr(ft_strncmp(SRC, SRC2, 12));
 //	try_ft_atoi("\n\n\t\t     -1654egfer265");
