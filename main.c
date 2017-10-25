@@ -6,7 +6,7 @@
 int		FD = 0;
 char	DEST[15];
 char	SRC[30] = "ceci est un test";
-char	SRC2[100] = "ceci est un autre test";
+char	SRC2[30] = "ceci est un autre test";
 char	**STR;
 void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
@@ -34,7 +34,8 @@ int		main(int argc, char **argv)
 //	ft_putstr(ft_strncpy(DEST, SRC, 10));
 //	ft_putstr(ft_strcat(SRC, SRC2));
 //	ft_putstr(ft_strncat(SRC, SRC2, 15));
-//	ft_putnbr(ft_strlcat(SRC2, SRC, 100));
+//	ft_putnbr(ft_strlcat(SRC, SRC2, 30));
+//	ft_putstr(ft_strchr(SRC, '0'));
 //	ft_putnbr(ft_strcmp("test","test"));
 //	ft_putnbr(ft_strncmp(SRC, SRC2, 12));
 //	try_ft_atoi("\n\n\t\t     -1654egfer265");
