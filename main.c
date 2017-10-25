@@ -49,6 +49,7 @@ int		main(int argc, char **argv)
 //	ft_putnbr(ft_isprint(' '));
 //	ft_putchar(ft_toupper('S'));
 //	ft_putchar(ft_tolower('s'));
+//	ft_putstr((char*)ft_memalloc(10));
 //	try_ft_strplit(SRC2, ' ');
 //	ft_putstr(ft_itoa(-2147483648));
 //	ft_putchar('a');

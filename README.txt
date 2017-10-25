@@ -42,7 +42,7 @@ int		ft_tolower(int c);                                      : ok
 
 Part 2
 
-void	*ft_memalloc(size_t size);					:
+void	*ft_memalloc(size_t size);					: ok
 void	ft_memdel(void **ap);						:
 char	*ft_strnew(size_t size);					:
 void	ft_strdel(char **as);						:
