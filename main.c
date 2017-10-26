@@ -17,6 +17,7 @@ void	try_ft_atoi(char *);
 void	try_ft_bzero(size_t);
 void	try_ft_memdel(char *);
 void	try_ft_strdel(char *);
+void	try_ft_strclr(char *);
 
 int		main(int argc, char **argv)
 {
@@ -53,7 +54,8 @@ int		main(int argc, char **argv)
 //	ft_putstr((char*)ft_memalloc(10));
 //	try_ft_memdel(SRC2);
 //	ft_putstr(ft_strnew(2));
-	try_ft_strdel(SRC);
+//	try_ft_strdel(SRC);
+	try_ft_strclr(SRC);
 //	try_ft_strplit(SRC2, ' ');
 //	ft_putstr(ft_itoa(-2147483648));
 //	ft_putchar('a');
@@ -65,6 +67,13 @@ int		main(int argc, char **argv)
 //	try_ft_putendl_fd("test");
 //	try_ft_putnbr_fd(-2147483648);
 	return (0);
+}
+
+void	try_ft_strclr(char *s)
+{
+	ft_putendl(s);
+	ft_strclr(s);
+	ft_putendl(s);
 }
 
 void	try_ft_strdel(char *s)
