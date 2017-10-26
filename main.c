@@ -57,7 +57,7 @@ int		main(int argc, char **argv)
 //	try_ft_strdel(SRC);
 //	try_ft_strclr(SRC);
 //	ft_striter(SRC, (void*)ft_putendl);
-//
+	ft_putnbr(ft_strequ(SRC, SRC));
 //	try_ft_strplit(SRC2, ' ');
 //	ft_putstr(ft_itoa(-2147483648));
 //	ft_putchar('a');
