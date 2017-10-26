@@ -50,7 +50,7 @@ void	ft_strclr(char *s);						: ok
 void	ft_striter(char *s, void (*f)(char *));				: ok
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));		: ok
 char	*ft_strmap(char const *s, char (*f)(char));			: ok
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));	:
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));	: ok
 int		ft_strequ(char const *s1, char const *s2);		:
 int		ft_strnequ(char const *s1, char const *s2, size_t n);	:
 char	*ft_strsub(char const *s, unsigned int start, size_t len);	:
