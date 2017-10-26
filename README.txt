@@ -49,7 +49,7 @@ void	ft_strdel(char **as);						: ok
 void	ft_strclr(char *s);						: ok
 void	ft_striter(char *s, void (*f)(char *));				: ok
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));		: ok
-char	*ft_strmap(char const *s, char (*f)(char));			:
+char	*ft_strmap(char const *s, char (*f)(char));			: ok
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));	:
 int		ft_strequ(char const *s1, char const *s2);		:
 int		ft_strnequ(char const *s1, char const *s2, size_t n);	:
