@@ -5,7 +5,7 @@
 #include "libft.h"
 int		FD = 0;
 char	DEST[15];
-char	SRC[30] = "ceci est un test";
+char	SRC[] = "     \n\n\t\tceci est un test   \n\n\n\t\t\t    ";
 char	SRC2[30] = "ceci est un autre test";
 char	**STR;
 void	try_ft_putchar_fd(char);
@@ -60,7 +60,8 @@ int		main(int argc, char **argv)
 //	ft_putnbr(ft_strequ(SRC, SRC));
 //	ft_putnbr(ft_strnequ(SRC, SRC2, 6));
 //	ft_putstr(ft_strsub(SRC, 3, 4));
-	ft_putstr(ft_strjoin(SRC, SRC2));
+//	ft_putstr(ft_strjoin(SRC, SRC2));
+	ft_putstr(ft_strtrim(SRC));
 //	try_ft_strplit(SRC2, ' ');
 //	ft_putstr(ft_itoa(-2147483648));
 //	ft_putchar('a');
