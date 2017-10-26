@@ -47,7 +47,7 @@ void	ft_memdel(void **ap);						: ok
 char	*ft_strnew(size_t size);					: ok
 void	ft_strdel(char **as);						: ok
 void	ft_strclr(char *s);						: ok
-void	ft_striter(char *s, void (*f)(char *));				:
+void	ft_striter(char *s, void (*f)(char *));				: ok
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));		:
 char	*ft_strmap(char const *s, char (*f)(char));			:
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));	:
