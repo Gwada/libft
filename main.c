@@ -51,6 +51,7 @@ int		main(int argc, char **argv)
 //	ft_putchar(ft_tolower('s'));
 //	ft_putstr((char*)ft_memalloc(10));
 //	try_ft_memdel(SRC2);
+//	ft_putstr(ft_strnew(2));
 //	try_ft_strplit(SRC2, ' ');
 //	ft_putstr(ft_itoa(-2147483648));
 //	ft_putchar('a');

@@ -44,7 +44,7 @@ Part 2
 
 void	*ft_memalloc(size_t size);					: ok
 void	ft_memdel(void **ap);						: ok
-char	*ft_strnew(size_t size);					:
+char	*ft_strnew(size_t size);					: ok
 void	ft_strdel(char **as);						:
 void	ft_strclr(char *s);						:
 void	ft_striter(char *s, void (*f)(char *));				:
