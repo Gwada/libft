@@ -61,7 +61,7 @@ int		main(int argc, char **argv)
 //	ft_putnbr(ft_strnequ(SRC, SRC2, 6));
 //	ft_putstr(ft_strsub(SRC, 3, 4));
 //	ft_putstr(ft_strjoin(SRC, SRC2));
-	ft_putstr(ft_strtrim(SRC));
+//	ft_putstr(ft_strtrim(SRC));
 //	try_ft_strplit(SRC2, ' ');
 //	ft_putstr(ft_itoa(-2147483648));
 //	ft_putchar('a');
