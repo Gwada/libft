@@ -8,6 +8,7 @@ char	DEST[15];
 char	SRC[] = "     \n\n\t\tceci est un test   \n\n\n\t\t\t    ";
 char	SRC2[30] = "ceci est un autre test";
 char	**STR;
+t_list	*new;
 void	try_ft_putchar_fd(char);
 void	try_ft_putstr_fd(char *);
 void	try_ft_putendl_fd(char *);
@@ -18,6 +19,7 @@ void	try_ft_bzero(size_t);
 void	try_ft_memdel(char *);
 void	try_ft_strdel(char *);
 void	try_ft_strclr(char *);
+void	try_ft_lstnew(void *, size_t);
 
 int		main(int argc, char **argv)
 {
@@ -72,7 +74,16 @@ int		main(int argc, char **argv)
 //	try_ft_putstr_fd("test");
 //	try_ft_putendl_fd("test");
 //	try_ft_putnbr_fd(-2147483648);
-	return (0);
+	try_ft_lstnew(NULL, 0);
+return (0);
+}
+
+void	try_ft_lstnew(void *content, size_t content_size)
+{
+	new = ft_lstnew(content, content_size);
+	ft_putnbr(new->content_size);
+	ft_putchar('\n');
+	ft_putstr(new->content);
 }
 
 void	try_ft_strclr(char *s)
