@@ -12,7 +12,7 @@
 **	STRUCTURES
 */
 
-typedef	struct		S_LIST
+typedef	struct		s_list
 {
 	void			*content;
 	size_t			content_size;
