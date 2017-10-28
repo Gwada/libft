@@ -76,6 +76,10 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t));		: ok
 void	ft_lstadd(t_list **alst, t_list *new);				: ok
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));		: ok
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));		: ok
+
+
+My functions
+
 void  ft_putnbrendl(int);              : ok
 int   ft_countwords(const char *s, const char c, size_t state);   : ok
 void  ft_printresultstrsplittab(const char **words);     : ok
