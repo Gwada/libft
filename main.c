@@ -75,6 +75,7 @@ int		main(int argc, char **argv)
 //	try_ft_putendl_fd("test");
 //	try_ft_putnbr_fd(-2147483648);
 //	try_ft_lstnew(NULL, 0);
+//	ft_putnbrendl(846262);
 return (0);
 }
 

@@ -88,4 +88,7 @@ void	ft_lstadd(t_list **, t_list *);
 void	ft_lstiter(t_list *, void (*f)(t_list *));
 t_list	*ft_lstmap(t_list *, t_list *(*f)(t_list *));
 
+/* My_functions */
+void	ft_putnbrendl(int);
+
 #endif
