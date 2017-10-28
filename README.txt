@@ -3,9 +3,9 @@ Liste des fichiers a rendre
 
 auteur		: ok
 
-Makefile	:
+Makefile	: ok
 
-libft.h		:
+libft.h		: ok
 
 
 Part 1
