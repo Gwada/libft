@@ -82,4 +82,4 @@ My functions
 
 void  ft_putnbrendl(int);              : ok
 int   ft_countwords(const char *s, const char c, size_t state);   : ok
-void  ft_printresultstrsplittab(const char **words);     : ok
+void  ft_printstrsplittab(const char **words);     : ok
