@@ -1,5 +1,5 @@
 NAME	= libft.a
-CC		= gcc
+GCC		= gcc -c
 FLAGS	= -Wall -Wextra -Werror
 HEADER	= libft.h
 SRC_C	= $(wildcard *.c)
@@ -8,7 +8,7 @@ SRC_O	= $(SRC_C:.c=.o)
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(FLAGS) -c $(SRC_C) $(HEADER)
+	$(GCC) $(FLAGS) $(SRC_C) $(HEADER)
 	ar rc $(NAME) $(SRC_O)
 	ranlib $(NAME)
 
