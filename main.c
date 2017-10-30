@@ -6,7 +6,7 @@
 int		FD = 0;
 char	DEST[15];
 char	SRC[] = "     \n\n\t\tceci est un test   \n\n\n\t\t\t    ";
-char	SRC2[100] = "ceci est un autre test qui permettra de tester le split et le Make file";
+char	SRC2[100] = "ceci est un test pour split_lst et le Makefile";
 char	**STR;
 t_list	*new;
 void	try_ft_putchar_fd(char);
@@ -76,7 +76,8 @@ int		main(int argc, char **argv)
 //	try_ft_putnbr_fd(-2147483648);
 //	try_ft_lstnew(NULL, 0);
 //	ft_putnbrendl(846262);
-	ft_printstrsplittab(ft_strsplit(SRC2, ' '));
+//	ft_printstrsplit_tab(ft_strsplit(SRC2, ' '));
+	ft_putendl_lst(ft_strsplit_lst(SRC2, ' '));
 return (0);
 }
 

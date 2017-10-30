@@ -91,6 +91,8 @@ t_list	*ft_lstmap(t_list *, t_list *(*f)(t_list *));
 /* My_functions */
 void	ft_putnbrendl(int);
 int		ft_countwords(const char *, const char, size_t);
-void	ft_printstrsplittab(char **);
+void	ft_printstrsplit_tab(char **);
+t_list	*ft_strsplit_lst(char const *, char);
+void	ft_putendl_lst(t_list *);
 
 #endif
