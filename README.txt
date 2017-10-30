@@ -80,8 +80,8 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));		: ok
 
 My functions
 
-void  ft_putnbrendl(int);              : ok
-int   ft_countwords(const char *s, const char c, size_t state);   : ok
-void  ft_printstrsplit_tab(const char **words);     : ok
-t_list   *ft_strsplit_lst(char const *s, char c);     :
-void  ft_putendl_lst(t_list *lst);        :
+void  ft_putnbrendl(int n);                        : ok
+int   ft_countwords(const char *s, const char c, size_t state);      : ok
+void  ft_printstrsplit_tab(const char **words);         : ok
+t_list   *ft_strsplit_lst(char const *s, char c);         : ok
+void  ft_putendl_lst(t_list *lst);                  : ok
