@@ -80,7 +80,7 @@ int		main(int argc, char **argv)
 //	ft_putlst(ft_strsplit_lst(SRC2, ' '), ft_putendl);
 //	ft_putnbr(ft_lstcount(ft_strsplit_lst(SRC2, ' ')));
 //	ft_putlst(ft_piledelone(ft_strsplit_lst(SRC2, ' ')), ft_putendl);
-
+	ft_putlst(ft_filedelone(ft_strsplit_lst(SRC2, ' ')), ft_putendl);
 	return (0);
 }
 

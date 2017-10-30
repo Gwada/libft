@@ -94,7 +94,8 @@ int		ft_countwords(const char *, const char, size_t);
 void	ft_printstrsplit_tab(char **);
 t_list	*ft_strsplit_lst(char const *, char);
 void	ft_putlst(t_list *, void (*f)(char const *));
-size_t	ft_lstcount(t_list *lst);
-t_list	*ft_piledelone(t_list *lst);
+size_t	ft_lstcount(t_list *);
+t_list	*ft_piledelone(t_list *);
+t_list	*ft_filedelone(t_list *);
 
 #endif
