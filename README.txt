@@ -85,3 +85,4 @@ int   ft_countwords(const char *s, const char c, size_t state);         : ok
 void  ft_printstrsplit_tab(const char **words);                         : ok
 t_list   *ft_strsplit_lst(char const *s, char c);                       : ok
 void  ft_putlst(t_list *lst, void (*f)(const char *));                  : ok
+size_t   ft_lstcount(t_list *lst);                                      : ok

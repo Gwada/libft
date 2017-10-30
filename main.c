@@ -77,7 +77,8 @@ int		main(int argc, char **argv)
 //	try_ft_lstnew(NULL, 0);
 //	ft_putnbrendl(846262);
 //	ft_printstrsplit_tab(ft_strsplit(SRC2, ' '));
-	ft_putlst(ft_strsplit_lst(SRC2, ' '), ft_putendl);
+//	ft_putlst(ft_strsplit_lst(SRC2, ' '), ft_putendl);
+//	ft_putnbr(ft_lstcount(ft_strsplit_lst(SRC2, ' ')));
 return (0);
 }
 
@@ -119,16 +120,14 @@ void	try_ft_bzero(size_t n)
 
 void	try_ft_strplit(char *s, char c)
 {
-	STR = ft_strsplit(s, c);
-	while (*STR)
-		ft_putendl(*(STR++));
+	ft_printstrsplit_tab(ft_strsplit(s, c));
 }
 
 void	try_ft_atoi(char *nptr)
 {
 	ft_putstr("ft_atoi : ");
-	ft_putnbr(ft_atoi(nptr));
-	ft_putstr("\natoi : ");
+	ft_putnbrendl(ft_atoi(nptr));
+	ft_putstr("atoi : ");
 	ft_putnbr(atoi(nptr));
 }
 
