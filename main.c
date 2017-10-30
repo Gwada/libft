@@ -77,7 +77,7 @@ int		main(int argc, char **argv)
 //	try_ft_lstnew(NULL, 0);
 //	ft_putnbrendl(846262);
 //	ft_printstrsplit_tab(ft_strsplit(SRC2, ' '));
-	ft_putendl_lst(ft_strsplit_lst(SRC2, ' '));
+	ft_putlst(ft_strsplit_lst(SRC2, ' '), ft_putendl);
 return (0);
 }
 

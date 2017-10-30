@@ -84,4 +84,4 @@ void  ft_putnbrendl(int n);                                             : ok
 int   ft_countwords(const char *s, const char c, size_t state);         : ok
 void  ft_printstrsplit_tab(const char **words);                         : ok
 t_list   *ft_strsplit_lst(char const *s, char c);                       : ok
-void  ft_putendl_lst(t_list *lst);                                      : ok
+void  ft_putlst(t_list *lst, void (*f)(const char *));             : ok
