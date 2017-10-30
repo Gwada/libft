@@ -79,7 +79,9 @@ int		main(int argc, char **argv)
 //	ft_printstrsplit_tab(ft_strsplit(SRC2, ' '));
 //	ft_putlst(ft_strsplit_lst(SRC2, ' '), ft_putendl);
 //	ft_putnbr(ft_lstcount(ft_strsplit_lst(SRC2, ' ')));
-return (0);
+//	ft_putlst(ft_piledelone(ft_strsplit_lst(SRC2, ' ')), ft_putendl);
+
+	return (0);
 }
 
 void	try_ft_lstnew(void *content, size_t content_size)
