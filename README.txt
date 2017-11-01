@@ -87,4 +87,6 @@ t_list   *ft_strsplit_lst(char const *s, char c);                       : ok
 void  ft_putlst(t_list *lst, void (*f)(const char *));                  : ok
 size_t   ft_lstcount(t_list *lst);                                      : ok
 t_list   *ft_piledelone(t_list *lst);                                   : ok
-t_list   *ft_filedelone(t_list *lst);                                   :
+t_list   *ft_filedelone(t_list *lst);                                   : ok
+t_list   *ft_pileaddone(t_list *lst);                                   : ok
+t_list   *ft_fileaddone(t_list *lst);                                   : ok

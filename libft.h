@@ -95,7 +95,11 @@ void	ft_printstrsplit_tab(char **);
 t_list	*ft_strsplit_lst(char const *, char);
 void	ft_putlst(t_list *, void (*f)(char const *));
 size_t	ft_lstcount(t_list *);
-t_list	*ft_piledelone(t_list *);
+t_list	*ft_fileaddone(t_list *);
 t_list	*ft_filedelone(t_list *);
+t_list	*ft_pileaddone(t_list *);
+t_list	*ft_piledelone(t_list *);
+t_list	*ft_strsplit_file(char const *, char);
+t_list	*ft_strsplit_pile(char const *, char);
 
 #endif

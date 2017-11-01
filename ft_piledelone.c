@@ -8,7 +8,7 @@ t_list	*ft_piledelone(t_list *lst)
 		return (NULL);
 	free(lst->content);
 	lst->content_size = 0;
-	next = lst->next;
+	next = (lst->next) ? lst->next : NULL;
 	lst->next = NULL;
 	free(lst);
 	return (next);
