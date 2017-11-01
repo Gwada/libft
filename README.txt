@@ -90,3 +90,5 @@ t_list   *ft_piledelone(t_list *lst);                                   : ok
 t_list   *ft_filedelone(t_list *lst);                                   : ok
 t_list   *ft_pileaddone(t_list *lst);                                   : ok
 t_list   *ft_fileaddone(t_list *lst);                                   : ok
+t_list	*ft_strsplit_file(char const *s, char c);                      : ok
+t_list	*ft_strsplit_pile(char const *s, char c);                      : ok
