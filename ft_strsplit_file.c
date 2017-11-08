@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit_file.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/11/06 16:34:37 by dlavaury          #+#    #+#             */
+/*   Updated: 2017/11/06 16:35:09 by dlavaury         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 t_list	*ft_strsplit_file(const char *s, char c)
@@ -26,5 +38,4 @@ t_list	*ft_strsplit_file(const char *s, char c)
 		word = word->next;
 	}
 	return (first);
-
 }

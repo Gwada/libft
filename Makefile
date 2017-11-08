@@ -1,12 +1,8 @@
+CFLAGS = -Wall -Wextra -Werror -I ./
+
 NAME	= libft.a
 
-GCC		= gcc -c
-
-FLAGS	= -Wall -Wextra -Werror
-
-HEADER	= libft.h
-
-SRC_C = ft_memset.c \
+SRC = ft_memset.c \
 		ft_bzero.c \
 		ft_memcpy.c \
 		ft_memccpy.c \
@@ -33,6 +29,7 @@ SRC_C = ft_memset.c \
 		ft_isascii.c \
 		ft_toupper.c \
 		ft_tolower.c \
+		ft_isprint.c \
 		ft_memalloc.c \
 		ft_memdel.c \
 		ft_strnew.c \
@@ -77,19 +74,25 @@ SRC_C = ft_memset.c \
 		ft_pileaddone.c \
 		ft_filedelone.c \
 		ft_strsplit_file.c \
-		ft_strsplit_pile.c
-
-SRC_O = $(SRC_C:.c=.o)
+		ft_strsplit_pile.c \
+#		ft_str_is_printable.c \
+#		ft_str_is_uppercase.c \
+#		ft_str_is_numeric.c \
+#		ft_str_is_alpha.c \
+#		ft_strcapitalize.c \
+#		ft_strlowcase.c \
+#		ft_strupcase.c
 
 all: $(NAME)
 
-$(NAME):
-	$(GCC) $(FLAGS) $(SRC_C) $(HEADER)
-	ar rc $(NAME) $(SRC_O)
+OBJ = $(SRC:.c=.o)
+
+$(NAME): $(OBJ)
+	ar rc $(NAME) $?
 	ranlib $(NAME)
 
 clean:
-	rm -f $(SRC_O)
+	rm -f $(OBJ)
 	rm -f libft.h.gch
 
 fclean:	clean

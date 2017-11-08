@@ -1,7 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/11/06 19:35:09 by dlavaury          #+#    #+#             */
+/*   Updated: 2017/11/08 17:58:44 by dlavaury         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <string.h>
+#include <stdio.h>
 #include "libft.h"
 int		FD = 0;
 char	DEST[15];
@@ -9,17 +22,17 @@ char	SRC[] = "     \n\n\t\tceci est un test   \n\n\n\t\t\t    ";
 char	SRC2[100] = "ceci est un test pour split_lst et le Makefile";
 char	**STR;
 t_list	*new;
-void	try_ft_putchar_fd(char);
-void	try_ft_putstr_fd(char *);
-void	try_ft_putendl_fd(char *);
-void	try_ft_putnbr_fd(int);
-void	try_ft_strplit(char *, char);
-void	try_ft_atoi(char *);
-void	try_ft_bzero(size_t);
-void	try_ft_memdel(char *);
-void	try_ft_strdel(char *);
-void	try_ft_strclr(char *);
-void	try_ft_lstnew(void *, size_t);
+void	try_ft_putchar_fd(char c);
+void	try_ft_putstr_fd(char *str);
+void	try_ft_putendl_fd(char *str);
+void	try_ft_putnbr_fd(int n);
+void	try_ft_strplit(char *s, char c);
+void	try_ft_atoi(void);
+void	try_ft_bzero(size_t n);
+void	try_ft_memdel(char *s);
+void	try_ft_strdel(char *s);
+void	try_ft_strclr(char *s);
+void	try_ft_lstnew(void *content, size_t content_size);
 
 int		main(int argc, char **argv)
 {
@@ -45,7 +58,7 @@ int		main(int argc, char **argv)
 //	ft_putstr(ft_strnstr("phrase test", "", 6));
 //	ft_putnbr(ft_strcmp("test","test"));
 //	ft_putnbr(ft_strncmp(SRC, SRC2, 12));
-//	try_ft_atoi("\n\n\t\t     -1654egfer265");
+//	try_ft_atoi();
 //	ft_putnbr(ft_isalpha('H'));
 //	ft_putnbr(ft_isdigit('d'));
 //	ft_putnbr(ft_isalnum('w'));
@@ -64,7 +77,7 @@ int		main(int argc, char **argv)
 //	ft_putstr(ft_strsub(SRC, 3, 4));
 //	ft_putstr(ft_strjoin(SRC, SRC2));
 //	ft_putstr(ft_strtrim(SRC));
-//	try_ft_strplit(SRC2, ' ');
+	ft_printstrsplit_tab(ft_strsplit("egggg", ' '));
 //	ft_putstr(ft_itoa(-2147483648));
 //	ft_putchar('a');
 //	ft_putstr("test");
@@ -125,33 +138,34 @@ void	try_ft_strplit(char *s, char c)
 	ft_printstrsplit_tab(ft_strsplit(s, c));
 }
 
-void	try_ft_atoi(char *nptr)
+void	try_ft_atoi(void)
 {
 	ft_putstr("ft_atoi : ");
-	ft_putnbrendl(ft_atoi(nptr));
+	ft_putnbrendl(ft_atoi("9999999999999999999"));
 	ft_putstr("atoi : ");
-	ft_putnbr(atoi(nptr));
+	ft_putnbrendl(atoi("9999999999999999999"));
+	ft_putstr("9999999999999999999");
 }
 
 void	try_ft_putnbr_fd(int n)
 {
 	FD = creat("test ft_putnbr_fd.txt", S_IRWXU);
 	ft_putnbr_fd(n, FD);
-	close (FD);
+	close(FD);
 }
 
 void	try_ft_putchar_fd(char c)
 {
 	FD = creat("test ft_putchar_fd.txt", S_IRWXU);
 	ft_putchar_fd(c, FD);
-	close (FD);
+	close(FD);
 }
 
 void	try_ft_putstr_fd(char *s)
 {
 	FD = creat("test ft_putstr_fd.txt", S_IRWXU);
 	ft_putstr_fd(s, FD);
-	close (FD);
+	close(FD);
 }
 
 void	try_ft_putendl_fd(char *s)

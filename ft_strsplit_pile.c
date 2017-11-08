@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit_pile.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/11/06 16:32:56 by dlavaury          #+#    #+#             */
+/*   Updated: 2017/11/06 16:33:48 by dlavaury         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 t_list	*ft_strsplit_pile(const char *s, char c)
@@ -24,6 +36,4 @@ t_list	*ft_strsplit_pile(const char *s, char c)
 			return (NULL);
 	}
 	return (word);
-
 }
-
