@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/09 13:01:22 by dlavaury          #+#    #+#             */
-/*   Updated: 2017/11/09 13:01:24 by dlavaury         ###   ########.fr       */
+/*   Created: 2017/11/09 10:21:37 by dlavaury          #+#    #+#             */
+/*   Updated: 2017/11/09 14:02:51 by dlavaury         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strsub(const char *s, unsigned int start, size_t len)
+int		ft_str_is_lowercase(char *str)
 {
-	char	*newstr;
-	size_t	i;
-
-	i = 0;
-	if (!s)
-		return (NULL);
-	if (!(newstr = (ft_strnew(len))))
-		return (NULL);
-	while (len--)
+	if (!str || !*str)
+		return (1);
+	while (*str)
 	{
-		newstr[i] = (char)s[start + i];
-		i++;
+		if (*str < 'a' || *str > 'z')
+			return (0);
+		str++;
 	}
-	newstr[i] = '\0';
-	return (newstr);
+	return (1);
 }

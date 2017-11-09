@@ -6,7 +6,7 @@
 /*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:12:40 by dlavaury          #+#    #+#             */
-/*   Updated: 2017/11/08 04:47:34 by dlavaury         ###   ########.fr       */
+/*   Updated: 2017/11/09 14:59:26 by dlavaury         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,8 +128,10 @@ int					ft_str_is_printable(char *str);
 int					ft_str_is_uppercase(char *str);
 int					ft_str_is_numeric(char *str);
 int					ft_str_is_alpha(char *str);
+char				*ft_strlowercase(char *str);
 char				*ft_strcapitalize(char *str);
-char				*ft_strlowcase(char *str);
+int					ft_str_is_lowercase(char *str);
 char				*ft_strupcase(char *str);
+void				ft_swap(int *a, int *b);
 
 #endif

@@ -75,17 +75,19 @@ SRC = ft_memset.c \
 		ft_filedelone.c \
 		ft_strsplit_file.c \
 		ft_strsplit_pile.c \
-#		ft_str_is_printable.c \
-#		ft_str_is_uppercase.c \
-#		ft_str_is_numeric.c \
-#		ft_str_is_alpha.c \
-#		ft_strcapitalize.c \
-#		ft_strlowcase.c \
-#		ft_strupcase.c
-
-all: $(NAME)
+		ft_str_is_printable.c \
+		ft_str_is_uppercase.c \
+		ft_str_is_numeric.c \
+		ft_str_is_alpha.c \
+		ft_strcapitalize.c \
+		ft_strlowercase.c \
+		ft_str_is_lowercase.c \
+		ft_strupcase.c \
+		ft_swap.c
 
 OBJ = $(SRC:.c=.o)
+
+all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rc $(NAME) $?
