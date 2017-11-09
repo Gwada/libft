@@ -6,17 +6,19 @@
 /*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 17:08:44 by dlavaury          #+#    #+#             */
-/*   Updated: 2017/11/09 10:26:33 by dlavaury         ###   ########.fr       */
+/*   Updated: 2017/11/09 20:20:38 by dlavaury         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_atoi(const char *nptr)
 {
-	int		i;
-	long	num;
-	int		pos_num;
+	int					i;
+	int					num;
+	int					pos_num;
+	unsigned long long	max;
 
 	i = 0;
+	max = 0;
 	num = 0;
 	pos_num = 1;
 	while (nptr[i] == ' ' || (nptr[i] >= 7 && nptr[i] <= 13))
@@ -29,7 +31,8 @@ int		ft_atoi(const char *nptr)
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		if (num > 9223372036854775807)
+		max = max * 10 + nptr[i] - '0';
+		if (max > 9223372036854775807)
 			return ((pos_num == 1) ? -1 : 0);
 		num = num * 10 + nptr[i++] - '0';
 	}
