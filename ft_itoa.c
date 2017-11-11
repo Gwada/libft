@@ -25,10 +25,7 @@ char	*ft_itoa(int n)
 	ui = (n < 0) ? -n : n;
 	while (--number >= 0)
 	{
-		if (!number && n < 0)
-			sn[number] = '-';
-		else
-			sn[number] = ui % 10 + '0';
+		sn[number] = (!number && n < 0) ? '-' : ui % 10 + '0';
 		ui /= 10;
 	}
 	return (sn);
