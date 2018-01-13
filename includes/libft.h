@@ -6,7 +6,7 @@
 /*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:12:40 by dlavaury          #+#    #+#             */
-/*   Updated: 2017/11/18 12:35:03 by dlavaury         ###   ########.fr       */
+/*   Updated: 2018/01/13 17:03:38 by dlavaury         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,9 +141,9 @@ char				*ft_strcapitalize(char *str);
 int					ft_str_is_lowercase(char *str);
 char				*ft_strupcase(char *str);
 void				ft_swap(int *a, int *b);
-int                 ft_strchri_up(const char *s, unsigned c);
-int                 ft_strchri(const char *s, unsigned c);
-size_t              ft_wstrlen(wchar_t *ws);
-size_t              ft_wcharlen(wchar_t c);
+int					ft_strchri_up(const char *s, unsigned c);
+int					ft_strchri(const char *s, unsigned c);
+size_t				ft_wstrlen(wchar_t *ws);
+size_t				ft_wcharlen(wchar_t c);
 
 #endif
