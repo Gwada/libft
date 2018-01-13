@@ -34,3 +34,22 @@ void	ft_attribuate(t_data *data)
 		++data->ft;
 	}
 }
+
+int		ft_atoi_p(const char *nptr)
+{
+	int					i;
+	int					num;
+	unsigned long long	max;
+
+	i = 0;
+	max = 0;
+	num = 0;
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		max = max * 10 + nptr[i] - '0';
+		if (max > INTMAXLEN)
+			return (-1);
+		num = num * 10 + nptr[i++] - '0';
+	}
+	return (num);
+}
