@@ -6,13 +6,13 @@
 /*   By: dlavaury <dlavaury@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 15:42:37 by dlavaury          #+#    #+#             */
-/*   Updated: 2018/01/12 09:50:11 by dlavaury         ###   ########.fr       */
+/*   Updated: 2018/01/13 17:01:11 by dlavaury         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_attribuate(t_data *data)
+void					ft_attribuate(t_data *data)
 {
 	data->bd = 0;
 	data->prec = 1;
@@ -35,21 +35,12 @@ void	ft_attribuate(t_data *data)
 	}
 }
 
-int		ft_atoi_p(const char *nptr)
+int						ft_atoi_p(const char *nptr)
 {
-	int					i;
-	int					num;
-	unsigned long long	max;
+	unsigned long long	num;
 
-	i = 0;
-	max = 0;
 	num = 0;
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		max = max * 10 + nptr[i] - '0';
-		if (max > INTMAXLEN)
-			return (-1);
-		num = num * 10 + nptr[i++] - '0';
-	}
-	return (num);
+	while (*nptr >= '0' && *nptr <= '9')
+		num = num * 10 + *(nptr++) - '0';
+	return ((int)num);
 }
