@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dprintf.c                                       :+:      :+:    :+:   */
+/*   ft_sprintf.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dlavaury <dlavaury@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/11 15:46:10 by dlavaury          #+#    #+#             */
-/*   Updated: 2018/03/31 19:15:58 by dlavaury         ###   ########.fr       */
+/*   Created: 2018/01/11 15:59:05 by dlavaury          #+#    #+#             */
+/*   Updated: 2018/03/31 19:15:36 by dlavaury         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void		ft_init_printf(t_data *data, const char *s, int fd)
+static int		ft_init_printf(t_data *data, const char *s, char *str)
 {
 	ft_bzero(data, sizeof(*data));
 	data->ft = (char*)s;
-	data->fd = fd;
-	data->str = NULL;
+	data->str_2 = str;
+	return (1);
 }
 
-int				ft_dprintf(int fd, const char *format, ...)
+int				ft_psprintf(char *str, const char *format, ...)
 {
 	t_data		data;
 
-	ft_init_printf(&data, format, fd);
+	ft_init_printf(&data, format, str);
 	va_start(data.ap, format);
 	while (*data.ft && data.error >= 0)
 	{
@@ -41,7 +41,6 @@ int				ft_dprintf(int fd, const char *format, ...)
 		!ft_strchr("%{", *data.ft) ? ++data.i : 0;
 		*data.ft && !ft_strchr("%{", *data.ft) ? ++data.ft : 0;
 	}
-	write(data.fd, data.buf, data.i_b);
 	va_end(data.ap);
 	return (data.error == -1 ? -1 : data.len);
 }

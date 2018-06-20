@@ -6,7 +6,7 @@
 /*   By: dlavaury <dlavaury@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 18:12:58 by dlavaury          #+#    #+#             */
-/*   Updated: 2018/01/12 09:55:37 by dlavaury         ###   ########.fr       */
+/*   Updated: 2018/06/10 17:04:55 by dlavaury         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,5 @@ void		ft_set_color(t_data *d, int len)
 		ft_buffering(d, UNDERLINE, 4);
 	else
 		ft_set_color_part2(d, &len);
-	d->ft += len;
+	len ? (d->ft += len) : ft_buffering(d, d->ft++, 1);
 }

@@ -1,10 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dlavaury <dlavaury@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/04/24 19:34:30 by dlavaury          #+#    #+#              #
+#    Updated: 2018/05/01 21:11:00 by dlavaury         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 CC = gcc
 
 NAME	= libft.a
 
-HEADER = -I Includes/
+HEADER = -I includes/
 
-CFLAGS = -Wall -Wextra -Werror $(HEADER)
+CFLAGS = -Wall -Wextra -Werror $(HEADER) -g3
 
 SRC = mem/ft_memset.c \
 		ft_bzero.c \
@@ -13,6 +25,7 @@ SRC = mem/ft_memset.c \
 		mem/ft_memmove.c \
 		mem/ft_memchr.c \
 		mem/ft_memcmp.c \
+		mem/ft_print_memory.c \
 		str/ft_strlen.c \
 		str/ft_strdup.c \
 		str/ft_strcpy.c \
@@ -90,11 +103,14 @@ SRC = mem/ft_memset.c \
 		ft_swap.c \
 		str/ft_strchri.c \
 		str/ft_strchri_up.c \
+		ft_wstrlen.c \
+		ft_wcharlen.c \
 		get_next_line/get_next_line.c \
 		ft_printf/attribuate.c \
 		ft_printf/ft_printf.c \
 		ft_printf/ft_dprintf.c \
 		ft_printf/ft_sprintf.c \
+		ft_printf/ft_psprintf.c \
 		ft_printf/parsing.c \
 		ft_printf/set_car.c \
 		ft_printf/set_string.c \
@@ -125,12 +141,13 @@ _PURPLE=\x1b[35m
 _CYAN=\x1b[36m
 _WHITE=\x1b[37m
 _END=\x1b[0m
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $?
 	@ranlib $(NAME)
-	@echo "$(_CYAN)$(NAME)$(_END) $(_GREEN)edited$(_END)"
+	@echo "$(_CYAN)$(NAME)$(_END)		: $(_GREEN)edited$(_END)"
 
 %.o: %.c
 	@printf "%-60b\r" "$(ECHO)"
@@ -139,11 +156,9 @@ $(NAME): $(OBJ)
 clean:
 	@rm -f $(OBJ)
 	@rm -f libft.h.gch
-	@echo "$(_RED)clean$(_END)	: $(_GREEN)done$(_END)"
 
 fclean:	clean
 	@rm -f $(NAME)
-	@echo "$(_RED)fclean$(_END)	: $(_GREEN)done$(_END)"
 
 re: fclean
 	@make all

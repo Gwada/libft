@@ -6,7 +6,7 @@
 /*   By: dlavaury <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 16:12:40 by dlavaury          #+#    #+#             */
-/*   Updated: 2018/01/13 17:03:38 by dlavaury         ###   ########.fr       */
+/*   Updated: 2018/05/04 16:40:09 by dlavaury         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@
 **    MACROS
 */
 
-# define INTMAXLEN 9223372036854775807
-# define BUFF_SIZE 128
+# define INTMAXLEN	9223372036854775807
+# define BUFF_SIZE	128
+# define IMAX		2147483647
+# define IMIN		-2147483648
 
 /*
 **	STRUCTURES
@@ -145,5 +147,7 @@ int					ft_strchri_up(const char *s, unsigned c);
 int					ft_strchri(const char *s, unsigned c);
 size_t				ft_wstrlen(wchar_t *ws);
 size_t				ft_wcharlen(wchar_t c);
+void				ft_print_mem(const void *mem, size_t size,
+								size_t elem, size_t opt);
 
 #endif
